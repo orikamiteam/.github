@@ -1,0 +1,107 @@
+name: Feature Request
+description: Propose an improvement, capability, or user-facing feature.
+title: "[Feature]: "
+labels:
+  - enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before You Submit
+
+        Thank you for taking the time to propose an improvement.\
+        Before submitting this request, please:
+
+        - Search existing Issues and Discussions to avoid duplicate proposals.
+        - Consider whether the proposed feature aligns with the project's scope and goals.
+        - For significant changes, consider starting a Discussion before opening an Issue.
+
+        > **Please focus on the problem or need rather than prescribing a specific implementation.**
+        >
+        > This helps maintainers evaluate different approaches and determine the best solution.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: |
+        Clearly describe the problem, limitation, or unmet need this feature
+        would address.
+      placeholder: |
+        What problem are you experiencing?
+        Who is affected by this problem?
+        Why is it important to address?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the capability or behavior you would like to see.
+      placeholder: |
+        Describe the proposed feature or improvement.
+        Focus on the desired behavior and outcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: |
+        Provide a concrete example of how this feature would be used and the
+        value it would provide.
+      placeholder: |
+        Describe a typical scenario where this feature would be useful.
+        Example:
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: |
+        Describe alternative solutions, existing capabilities, or workarounds you
+        have considered.
+      placeholder: |
+        What alternatives or workarounds have you tried?
+        Why do they not adequately address the problem?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: |
+        Provide any additional information that may help us evaluate the proposal.
+      placeholder: |
+        Examples, screenshots, references, related Issues or Discussions,
+        technical considerations, or other relevant information.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following before submitting your request.
+      options:
+        - label: |
+            I have searched existing Issues and Discussions and did not find a
+            similar request.
+          required: true
+        - label: I have clearly described the problem or need this feature would address.
+          required: true
+        - label: I have provided a concrete use case or example.
+          required: true
+        - label: |
+            I understand that this proposal may not be accepted if it does not
+            align with the project's scope or direction.
+          required: true

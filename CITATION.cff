@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: Orikami Team
+message: "If you use this software, please cite it as follows."
+type: software
+authors:
+  - given-names: Eduardo
+    family-names: Baginski Costa
+    email: baginskicosta@gmail.com
+    affiliation: Orikami Team
+    orcid: "https://orcid.org/0009-0004-8118-7168"
+  - name: Orikami Team
+    city: Palmeira
+    country: BR
+    post-code: "84130000"
+    region: PR
+    alias: Orikami
+    email: opensource@orikami.team
+    website: "https://orikami.team/"
+repository-code: "https://github.com/orikamiteam"
+url: "https://github.com/orikamiteam"
+license: BSD-3-Clause

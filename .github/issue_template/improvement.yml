@@ -1,0 +1,101 @@
+name: Improvement
+description: Propose an improvement to an existing feature, workflow, or project component.
+title: "[Improvement]: "
+labels:
+  - enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before You Submit
+
+        Thank you for taking the time to help improve the project.\
+        Before submitting this proposal, please:
+
+        - Search existing Issues and Discussions to avoid duplicate proposals.
+        - Confirm that the proposal improves an existing capability rather than introducing a completely new one.
+        - Provide enough context for maintainers to understand the current behavior and the desired outcome.
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: |
+        Clearly describe how the existing feature, workflow, or component
+        currently behaves.
+      placeholder: |
+        Describe the current behavior or workflow.
+        Include any limitations, friction points, or issues you have encountered.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-improvement
+    attributes:
+      label: Proposed Improvement
+      description: |
+        Describe what you would like to improve and the desired behavior or outcome.
+      placeholder: |
+        Describe the proposed improvement.
+        What should work differently or better?
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Expected Benefits
+      description: |
+        Explain how the proposed improvement would benefit users, developers,
+        maintainers, or the project as a whole.
+      placeholder: |
+        How would this improvement make the project:
+        - Simpler?
+        - More efficient?
+        - More intuitive?
+        - More reliable?
+        - Easier to maintain?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: |
+        Describe alternative approaches, existing capabilities, or workarounds
+        you have considered.
+      placeholder: |
+        What alternatives or workarounds have you considered?
+        Why do they not adequately address the situation?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Provide any additional information that may help us evaluate the proposal.
+      placeholder: |
+        Screenshots, benchmarks, examples, references, related Issues or Discussions,
+        technical considerations, or other relevant information.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following before submitting your proposal.
+      options:
+        - label: |
+            I have searched existing Issues and Discussions and did not find a
+            similar proposal.
+          required: true
+        - label: |
+            This proposal focuses on improving an existing feature, workflow, or
+            project component.
+          required: true
+        - label: I have clearly described the current behavior and the proposed improvement.
+          required: true
