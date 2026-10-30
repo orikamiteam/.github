@@ -1,6 +1,6 @@
 <p align="left" aria-label="Orikami Team logo">
   <a href="https://orikami.team/" target="_blank">
-    <img src="../images/orikami.svg" height="60px" alt="Orikami">
+    <img src="./images/orikami.svg" height="60px" alt="Orikami">
   </a>
 </p>
 
